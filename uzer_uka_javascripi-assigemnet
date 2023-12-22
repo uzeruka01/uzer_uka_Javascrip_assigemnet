@@ -1,0 +1,276 @@
+1. What is jawascript ?
+A. JavaScript is a programming language commonly used for web development to add interactivity and dynamic content to websites.
+
+2. What is the use of is NaN funcsion ?
+A. The isNaNto one. function in JavaScript is used to determine whether a value is NaN (Not-a-Number) or not. It returns true if the value is NaN and false if it is a valid number or can be   converted.
+
+3. What is nagative infinity ?
+A. Negative Infinity is a special value in JavaScript representing the mathematical concept of negative infinity. It is a result of certain operations that lead to a value beyond the                    representable range of numbers. For example, dividing a negative number by zero or subtracting Infinity from any finite number results in Negative Infinity.
+
+4. Which company devloped jawascript ?
+A. JavaScript was developed by Netscape Communications Corporation. It was created by Brendan Eich in 1995, while he was working at Netscape. Initially, it was named "Mocha" and later "LiveScript" before finally being renamed JavaScript. Despite its name, JavaScript has no direct relationship with Java; the similar names were mostly a marketing decision to capitalize on the popularity of Java at that time. JavaScript has since become one of the most widely used programming languages for web development.
+
+5. What are undeclared and undefined variables?
+A. Undeclared and undefined variables are concepts in programming, often associated with dynamically-typed languages like JavaScript.
+
+Undeclared Variables:
+
+An undeclared variable is a variable that has been used in code without being declared using a var, let, or const keyword.
+In some languages, using an undeclared variable may result in an error, while in others, the variable is implicitly declared (often as a global variable).
+Using undeclared variables can lead to unexpected behavior and bugs, as the interpreter may make assumptions about the scope or create global variables unintentionally.
+
+6. Write the code for adding new elements dynamically? 
+A. Certainly! To add new elements dynamically to a webpage using JavaScript, you can use the DOM (Document Object Model) manipulation. Below is an example code snippet demonstrating how to dynamically add a new element (in this case, a paragraph) to the HTML document:
+
+7. What is the difference between ViewState and SessionState? 
+A. ViewState and SessionState are concepts in ASP.NET, a web application framework developed by Microsoft. They are used to manage and persist state information in web applications. Here's a brief explanation of each:
+
+ (1) ViewState:
+
+ViewState is a mechanism used to persist state information for a single page in an ASP.NET application.
+It is used to store and retrieve the values of controls and page-specific information between round trips.
+The ViewState data is stored on the client side, typically in a hidden field within the HTML page.
+It is suitable for maintaining state information for a specific page and is primarily used for scenarios where you need to maintain state across postbacks on the same page.
+ 
+ (2) SessionState:
+
+SessionState is used to persist state information across multiple pages or requests for a user session.
+It stores data on the server side, typically using one of the available session state providers (e.g., in-process, out-of-process, SQL Server).
+Information stored in SessionState is accessible throughout the user's session and can be used to maintain user-specific data across multiple pages.
+
+8. What is === operator?
+A. The === operator is a strict equality operator in JavaScript. It is used to compare two values for equality without performing type coercion. This means that in order for the comparison to return true, both the value and the data type must be the same.
+ 
+9. How can the style/class of an element be changed? 
+A. In JavaScript, you can change the style or class of an HTML element using the DOM (Document Object Model) manipulation. Here are examples for both changing the style and changing the class of an element:
+
+  (1) Changing Style:
+You can modify the style properties of an element directly using the style property:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style Example</title>
+</head>
+<body>
+
+<!-- HTML element to modify -->
+<p id="myParagraph">This is a paragraph.</p>
+
+<!-- JavaScript code to change the style -->
+<script>
+    // Get the element by its ID
+    var paragraphElement = document.getElementById("myParagraph");
+
+    // Change the style properties
+    paragraphElement.style.color = "red";
+    paragraphElement.style.fontSize = "20px";
+</script>
+
+</body>
+</html>
+In this example, the color and font size of the paragraph element with the ID "myParagraph" are changed using the style property.
+
+   (2)  Changing Class:
+You can also change the class of an element, which is often a preferred way to apply styles when dealing with more complex styling:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Class Example</title>
+    <style>
+        /* Define CSS classes with styles */
+        .redText {
+            color: red;
+        }
+        .largeText {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HTML element to modify -->
+<p id="myParagraph">This is a paragraph.</p>
+
+<!-- JavaScript code to change the class -->
+<script>
+    // Get the element by its ID
+    var paragraphElement = document.getElementById("myParagraph");
+
+    // Change the class
+    paragraphElement.classList.add("redText");
+    paragraphElement.classList.add("largeText");
+</script>
+
+</body>
+</html>
+In this example, two CSS classes, "redText" and "largeText," are defined in the <style> section. The JavaScript code then adds both classes to the paragraph element using the classList property.
+
+Choose the approach (direct style manipulation or class manipulation) based on your specific use case and whether you want to apply a single style or a set of styles defined in CSS classes. Using classes is generally more maintainable, especially when dealing with multiple styles.
+
+10. How to read and write a file using JavaScript? 
+A . In a web browser environment, JavaScript itself doesn't have direct access to the local file system for security reasons. However, you can interact with files in a few ways:
+
+File Input Element (for reading files):
+
+You can use the <input type="file"> element to allow users to select and upload files.
+Once a file is selected, you can access its contents using the File API.
+
+11. What are all the looping structures in JavaScript?
+A . 
+JavaScript provides several looping structures to iterate through a set of instructions or a collection of data. The main looping structures in JavaScript are:
+
+  (1) for Loop:
+
+The for loop is used to iterate over a block of code a specified number of times.
+It consists of an initialization statement, a condition, and an increment/decrement statement.
+
+  (2) while Loop:
+
+The while loop continues to execute a block of code as long as the specified condition is true.
+
+  (3) do-while Loop:
+
+The do-while loop is similar to the while loop, but it ensures that the block of code is executed at least once before checking the condition.
+
+  (4) for...in Loop:
+
+The for...in loop iterates over the properties of an object.
+
+  (5)for...of Loop:
+
+The for...of loop iterates over the values of an iterable object, such as an array or a string.
+
+  (6) forEach Method:
+
+The forEach method is available for arrays and executes a provided function once for each array element.
+
+These looping structures provide flexibility for different types of iterations, and the choice of which to use depends on the specific requirements of your code. Each has its own use cases and advantages.
+
+12. How can you convert the string of any base to an integer in JavaScript?
+A . In JavaScript, you can use the parseInt function to convert a string representing a number in a specific base to an integer. The parseInt function takes two arguments: the string to be converted and the base of the numeral system.
+
+Here's an example of converting a string representing a binary number to an integer:
+
+let binaryString = "1101";
+let decimalNumber = parseInt(binaryString, 2);
+
+console.log(decimalNumber); // Output: 13
+In this example, the string "1101" is a binary number, and parseInt(binaryString, 2) converts it to its decimal equivalent (13 in this case). The second argument, 2, specifies that the input string is in base-2 (binary).
+
+You can use the same approach to convert strings representing numbers in other bases. Just change the second argument of parseInt to the appropriate base. For example:
+
+
+let octalString = "23";
+let decimalNumberFromOctal = parseInt(octalString, 8);
+
+console.log(decimalNumberFromOctal); // Output: 19
+In this case, the string "23" is an octal number, and parseInt(octalString, 8) converts it to its decimal equivalent (19 in this case).
+
+Keep in mind that parseInt can be used for bases ranging from 2 to 36, inclusive. If the base is not explicitly specified, JavaScript assumes base 10.
+
+13. What is the function of the delete operator?
+A . The delete operator in JavaScript is used to delete an object property or an element at a specified index in an array. It is important to note that using delete does not affect the length of an array, and it leaves a hole in the array.
+
+Here are some examples of using the delete operator:
+
+Deleting a property from an object:
+
+let obj = { name: 'John', age: 25 };
+
+// Delete the 'age' property
+delete obj.age;
+
+console.log(obj); // Output: { name: 'John' }
+Deleting an element from an array:
+
+let arr = [1, 2, 3, 4, 5];
+
+// Delete the element at index 2
+delete arr[2];
+
+console.log(arr); // Output: [1, 2, <1 empty item>, 4, 5]
+Keep in mind that the delete operator does not shift the remaining array elements to fill the gap; it simply sets the deleted element to undefined. As a result, it's often better to use array methods like splice() if you want to remove elements from an array and maintain continuity. 
+
+14. What are all the types of Pop up boxes available in JavaScript? 
+A . JavaScript provides several types of pop-up boxes that developers can use to interact with users. These pop-up boxes are typically created using methods of the window object. Here are the main types:
+
+  (1) Alert Box:
+
+The alert() method is used to display an alert box with a specified message and an OK button.
+
+alert("This is an alert message!");
+
+  (2) Confirm Box:
+
+The confirm() method displays a dialog box with a specified message and OK and Cancel buttons.
+It returns a Boolean value (true if the user clicks "OK" and false if the user clicks "Cancel").
+
+var result = confirm("Are you sure?");
+
+  (3) Prompt Box:
+
+The prompt() method displays a dialog box that prompts the user for input. It can have an optional default value.
+It returns the text entered by the user as a string or null if the user clicks "Cancel."
+
+var userInput = prompt("Please enter your name:", "John Doe");
+These pop-up boxes are synchronous, meaning that the script execution is paused until the user interacts with the box. While they can be useful for simple interactions, they are considered somewhat obtrusive, and developers often prefer using more modern and user-friendly approaches, such as modal dialogs or custom UI components. Additionally, excessive use of pop-ups can lead to a poor user experience, so they should be used judiciously.
+
+15. What is the use of Void (0)? 
+A . The void operator in JavaScript is used to evaluate an expression without returning a value. The common use of void is with the value void(0), and it's often seen in the context of hyperlinks or anchor tags (<a> elements) to prevent the browser from navigating to a new page when the link is clicked.
+
+16. How can a page be forced to load another page in JavaScript? 
+A . In JavaScript, you can use the window.location object to manipulate the browser's location and force a page to load another page. Here are a few methods to achieve this:
+
+  (1) Using window.location.href:
+You can set the window.location.href property to the URL of the page you want to load.
+
+
+// Redirect to another page
+window.location.href = "https://www.example.com";
+
+   (2) Using window.location.replace():
+The replace() method is similar to setting window.location.href, but it doesn't add a new entry to the browser's history. The current page is replaced by the new one.
+
+
+// Replace the current page with another page
+window.location.replace("https://www.example.com");
+
+   (3) Using a hyperlink (<a> element):
+You can simulate a click on a hyperlink to navigate to another page.
+
+
+// Simulate a click on a hyperlink
+document.getElementById("myLink").click();
+
+In this case, you would have an HTML element like this:
+
+<a id="myLink" href="https://www.example.com" style="display:none;"></a>
+This method is less common than the direct manipulation of window.location, but it can be useful in some scenarios.
+
+Remember that changing the location of the page using JavaScript is a form of redirection, and it will unload the current page. Users will be redirected to the new page, and any unsaved data on the current page will be lost. Additionally, some browsers may block or prompt the user for confirmation if a page attempts to redirect too frequently or if the redirection is not triggered by user interaction. Redirection should be used carefully to ensure a positive user experience.
+
+17. What are the disadvantages of using innerHTML in JavaScript? 
+A . While the innerHTML property in JavaScript is convenient and widely used for manipulating HTML content within an element, it does come with some potential disadvantages and risks:
+
+  (1) Security Concerns (Cross-Site Scripting - XSS):
+Using innerHTML to directly manipulate HTML can expose your application to Cross-Site Scripting (XSS) vulnerabilities if you're not careful. If you insert user-generated content into the HTML using innerHTML without proper validation or sanitation, malicious scripts could be injected and executed.
+
+  (2) Performance Issues:
+Frequent use of innerHTML to manipulate large amounts of HTML content can impact performance. When you set innerHTML, the browser has to re-parse and re-render the entire content of the affected element, which can be inefficient compared to more targeted manipulations using the DOM API.
+
+  (3) Event Handlers and Data Loss:
+If the element's content includes elements with attached event handlers or data, setting innerHTML will remove those elements and their associated data and event listeners. This can lead to unintended consequences and loss of state.
+ 
+  (4) Limited Error Handling:
+If there are errors in the HTML string passed to innerHTML, the entire operation might fail, and it could be challenging to handle those errors gracefully. In contrast, when using the DOM API, errors can be caught and handled more effectively.
+
+  (5) Limited DOM Interaction:
+innerHTML is primarily used for setting and getting the HTML content of an element. If you need to perform more complex manipulations, such as creating and appending multiple elements with specific attributes, using the DOM API directly can provide more control and flexibility.
+
+In summary, while innerHTML is a powerful and convenient way to manipulate HTML content, it should be used carefully, especially with user-generated or untrusted content. Whenever possible, consider alternatives like the DOM API or innerText for safer and more controlled manipulation of content.
